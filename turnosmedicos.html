@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("doctorapointment.jpg");
+  height: 69%;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+
+
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">Turnos Medicos</h1>
+    <label for="medical">Escoja su centro de cita:</label>
+  
+<select id="medical">
+  <option value="dr chapatin">Dr chapatin</option>
+  <option value="JJ medical">Dr Mengueche</option>
+  <option value="centro del perreo">centro del perreo</option>
+  <option value="estamos">estamos bien </option>
+</select>
+
+<button  ><a href="suturno.html"> Aceptar</a></button><br>
+<input type="text" placeholder="Search.."><button type="submit"><i class="fa fa-search"></i></button>
+  </div>
+  
+</div>
+
+
+<div class="container">
+  <h2>Turnos en espera</h2>
+  <ul class="list-group">
+    <li class="list-group-item">Dr chapatin <span class="badge">12</span></li>
+    <li class="list-group-item">estamos bien   <span class="badge">5</span></li>
+    <li class="list-group-item">centro del perreo<span class="badge">3</span></li>
+  </ul>
+</div>
+
+</body>
+</html>
